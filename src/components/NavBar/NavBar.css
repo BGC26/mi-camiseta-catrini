@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+.title-navbar{
+    color: white;
+    display: flex;
+}
+
+.categories-navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.categories-navbar a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.categories-navbar a:hover{
+    color: black;
+}
+
+.login-navbar{
+    display: flex;
+}
