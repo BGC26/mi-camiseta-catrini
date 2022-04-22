@@ -1,4 +1,8 @@
 .item-list-container{
+    height: 100vh;;
+}
+
+.item-list-container h2{
     color: rgb(0, 0, 62);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
