@@ -1,3 +1,4 @@
+/*
 .item-count-container{
     position: relative;
     display: flex;
@@ -20,10 +21,18 @@
     align-items: center;
 }
 
+*/
+
 .item-count{
-    text-align:center;
-    flex-grow: 1;
-    align-content: space-around;
+    display: inline-flex;
+    align-items: center;
+    width: 75vh;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+.item-count h4{
+margin-right: 5px;
 }
 
 .item-count input{
@@ -40,8 +49,7 @@
 }
 
 .item-cart-button{
-    margin-left: 25px;
-    margin-bottom: 20px;
+    width: 75vh;
 }
 
 .item-cart-button button{
@@ -50,6 +58,7 @@
     color: white;
     font-weight: bold;
     font-size: 15px;
+    width: 50vh;
     padding: 5px 35px 5px 35px;
     background-color: rgb(0, 0, 62);
     border-radius: 10px;
@@ -58,3 +67,6 @@
 .item-cart-button button:hover{
     color: rgb(251, 180, 1);
 }
+
+
+

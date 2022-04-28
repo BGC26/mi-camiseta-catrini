@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+/* import ItemListContainer from './components/ItemListContainer/ItemListContainer'; */
 /* import logo from './logo.svg'; */
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
         </a>
         </header> */}
       <NavBar />
-      <ItemListContainer greeting='¡Bienvenido a Mi Camiseta!'/>
+      {/* <ItemListContainer greeting='¡Bienvenido a Mi Camiseta!'/> */}
+      <ItemDetailContainer id={1} />
     </div>
   );
 }
