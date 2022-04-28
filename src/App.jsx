@@ -1,11 +1,12 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+/* import logo from './logo.svg'; */
 
-/*
-import logo from './logo.svg';
-
-<header className="App-header">
+function App() {
+  return (
+    <div className="App">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,12 +19,7 @@ import logo from './logo.svg';
         >
           Learn React
         </a>
-</header>
-*/
-
-function App() {
-  return (
-    <div className="App">
+        </header> */}
       <NavBar />
       <ItemListContainer greeting='¡Bienvenido a Mi Camiseta!'/>
     </div>

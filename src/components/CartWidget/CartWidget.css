@@ -1,10 +1,12 @@
 .cart-widget{
     color: rgb(0, 0, 62);
+    font-weight: bold;
     width: 30px;
     height: 30px;
     margin-top: 20px;
+    padding: 5px;
     border-radius: 100%;
-    border-style:groove;
+    border-style: dotted;
     border-color:white;
     background-color: gray;
 }

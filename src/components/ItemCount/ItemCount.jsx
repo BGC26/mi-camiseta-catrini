@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ItemCount.css';
 
 const ItemCount = ({ stock, initial, onAdd }) => {
-    const [count, setCount] = React.useState(initial);
+    const [count, setCount] = useState(initial);
     
     function increaseButton() {
         if (count < stock) {

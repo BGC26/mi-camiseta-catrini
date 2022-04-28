@@ -1,0 +1,7 @@
+.item-list{
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    margin-left: 40px;
+    max-width: 100%;
+}
