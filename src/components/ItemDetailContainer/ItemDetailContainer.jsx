@@ -6,8 +6,9 @@ import camEsp10 from '../../assets/camiseta-sel-1.jpg';
 import camBra86 from '../../assets/camiseta-sel-2.jpg';
 import camArg14 from '../../assets/camiseta-sel-3.jpg';
 
+
 const ItemDetailContainer = () => {
-    
+
     function getItem() {
         const promise = new Promise((resolve, reject) => {
             const productsList = [
@@ -47,18 +48,21 @@ const ItemDetailContainer = () => {
         return promise;
     }
 
-    const [items, setItem] = useState([]);
+    const [myItem, setItem] = useState({});
 
     useEffect(() => {
         getItem()
         .then(res => {
             setItem(res);
         })
-    }, []);
+        .catch(err => {
+            console.log(err)
+        })
+    }, {});
 
     return (
         <div className='item-detail-container'>
-            <ItemDetail item={ items } />
+            <ItemDetail item={ myItem } />
        </div>
     );
 };

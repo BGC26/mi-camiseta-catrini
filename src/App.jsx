@@ -23,7 +23,7 @@ function App() {
         </header> */}
       <NavBar />
       {/* <ItemListContainer greeting='¡Bienvenido a Mi Camiseta!'/> */}
-      <ItemDetailContainer id={1} />
+      <ItemDetailContainer />
     </div>
   );
 }

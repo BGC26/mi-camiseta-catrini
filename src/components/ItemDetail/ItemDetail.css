@@ -20,6 +20,7 @@
 }
 
 .item-detail-information{
+    flex-direction: column;
     width: 75vh;
     justify-content: center;
     margin: 40px auto 20px auto;
