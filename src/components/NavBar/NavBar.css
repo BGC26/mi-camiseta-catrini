@@ -19,9 +19,18 @@
     display: flex;
     justify-content: center;
     color: white;
+    margin-top: 30px;
 }
 
-.categories-navbar a{
+.login-register-navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.section{
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -29,24 +38,6 @@
     margin-right: 40px;
 }
 
-.categories-navbar a:hover{
-    color: rgb(251, 180, 1);
-}
-
-.login-register-navbar{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    color: white;;
-}
-
-.login-register-navbar a{
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.login-register-navbar a:hover{
+.section:hover{
     color: rgb(251, 180, 1);
 }

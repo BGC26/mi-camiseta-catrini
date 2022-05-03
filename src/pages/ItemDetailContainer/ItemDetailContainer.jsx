@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import ItemList from '../ItemList/ItemList';
-import './ItemListContainer.css';
+import { useParams } from 'react-router-dom';
+import ItemDetail from '../../components/ItemDetail/ItemDetail';
+import './ItemDetailContainer.css';
 import camJuv from '../../assets/camiseta-clu-1.jpg';
 import camEsp10 from '../../assets/camiseta-sel-1.jpg';
 import camBra86 from '../../assets/camiseta-sel-2.jpg';
 import camArg14 from '../../assets/camiseta-sel-3.jpg';
-/* import ItemCount from '../ItemCount/ItemCount'; */
 
-const ItemListContainer = ({/* greeting */}) => {
-    
-    function getProducts() {
+
+const ItemDetailContainer = () => {
+
+    function getItem(id) {
         const promise = new Promise((resolve, reject) => {
             const productsList = [
                 {
@@ -17,6 +18,7 @@ const ItemListContainer = ({/* greeting */}) => {
                     title: "Camiseta Nike Titular Juventus 2015",
                     price: "$10.450",
                     stock: "2",
+                    category: "club",
                     image: camJuv
                 },
                 {
@@ -24,6 +26,7 @@ const ItemListContainer = ({/* greeting */}) => {
                     title: "Camiseta Adidas Titular España 2010",
                     price: "$11.300",
                     stock: "2",
+                    category: "seleccion",
                     image: camEsp10
                 },
                 {
@@ -31,6 +34,7 @@ const ItemListContainer = ({/* greeting */}) => {
                     title: "Camiseta Topper Titular Brasil 1986",
                     price: "$14.600",
                     stock: "1",
+                    category: "seleccion",
                     image: camBra86
                 },
                 {
@@ -38,32 +42,36 @@ const ItemListContainer = ({/* greeting */}) => {
                     title: "Camiseta Adidas Titular Argentina 2014",
                     price: "$12.150",
                     stock: "3",
+                    category: "seleccion",
                     image: camArg14
                 }
             ];
+            const item = productsList.filter(item => item.id === parseInt(id))
             setTimeout(() => {
-                resolve(productsList);
+                resolve(item[0]);
             }, 2000);
         });
         return promise;
     }
 
-    const [products, setProducts] = useState([]);
+    const [myItem, setItem] = useState({});
+    const { id } = useParams();
 
     useEffect(() => {
-        getProducts()
+        getItem(id)
         .then(res => {
-            setProducts(res);
+            setItem(res);
         })
-    }, []);
+        .catch(err => {
+            console.log(err)
+        })
+    }, [id]);
 
     return (
-        <div className='item-list-container'>
-            {/* <h2>{greeting}</h2> */}
-            {/* <ItemCount stock={3} initial={1} /> */}
-            <ItemList items={ products } />
+        <div className='item-detail-container'>
+            <ItemDetail item={ myItem } />
        </div>
     );
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;

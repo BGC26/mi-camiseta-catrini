@@ -1,13 +1,13 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-/* import ItemListContainer from './components/ItemListContainer/ItemListContainer'; */
+import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
 /* import logo from './logo.svg'; */
 
-function App() {
-  return (
-    <div className="App">
-      {/* <header className="App-header">
+/* greeting='¡Bienvenido a Mi Camiseta!' */
+
+/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -20,10 +20,17 @@ function App() {
         >
           Learn React
         </a>
-        </header> */}
+        </header> */
+ 
+function App() {
+  return (
+    <div className="App">
       <NavBar />
-      {/* <ItemListContainer greeting='¡Bienvenido a Mi Camiseta!'/> */}
-      <ItemDetailContainer />
+      <Routes>
+        <Route path='/' element={ <ItemListContainer /> } />
+        <Route path='/category/:categoryId' element={ <ItemListContainer /> }/>
+        <Route path='/item/:id' element={ <ItemDetailContainer /> } />
+      </Routes>
     </div>
   );
 }
