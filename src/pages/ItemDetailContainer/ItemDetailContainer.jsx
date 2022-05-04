@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Loader from '../../components/Loader/Loader';
 import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import './ItemDetailContainer.css';
 import camJuv from '../../assets/camiseta-clu-1.jpg';
@@ -54,21 +55,28 @@ const ItemDetailContainer = () => {
         return promise;
     }
 
+    const [loading, setLoading] = useState(false);
     const [myItem, setItem] = useState({});
     const { id } = useParams();
 
     useEffect(() => {
+        setLoading(true)
         getItem(id)
         .then(res => {
             setItem(res);
+            setLoading(false);
         })
         .catch(err => {
             console.log(err)
+        })
+        .finally(() => {
+            setLoading(false)
         })
     }, [id]);
 
     return (
         <div className='item-detail-container'>
+            { loading && <Loader/> }
             <ItemDetail item={ myItem } />
        </div>
     );

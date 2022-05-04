@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Loader from '../../components/Loader/Loader';
 import ItemList from '../../components/ItemList/ItemList';
 import './ItemListContainer.css';
 import camJuv from '../../assets/camiseta-clu-1.jpg';
 import camEsp10 from '../../assets/camiseta-sel-1.jpg';
 import camBra86 from '../../assets/camiseta-sel-2.jpg';
 import camArg14 from '../../assets/camiseta-sel-3.jpg';
-/* import ItemCount from '../ItemCount/ItemCount'; */
 
-const ItemListContainer = ({/* greeting */}) => {
+
+const ItemListContainer = () => {
     
     function getProducts(category) {
         const promise = new Promise((resolve, reject) => {
@@ -54,23 +55,28 @@ const ItemListContainer = ({/* greeting */}) => {
         return promise;
     }
 
+    const [loading, setLoading] = useState(false);
     const [products, setProducts] = useState([]);
     const { categoryId } = useParams();
 
     useEffect(() => {
+        setLoading(true)
         getProducts(categoryId)
         .then(res => {
             setProducts(res);
+            setLoading(false);
         })
         .catch(err => {
-            console.log(err)
+            console.log(err);
+        })
+        .finally(() => {
+            setLoading(false)
         })
     }, [categoryId]);
 
     return (
         <div className='item-list-container'>
-            {/* <h2>{greeting}</h2> */}
-            {/* <ItemCount stock={3} initial={1} /> */}
+            { loading && <Loader/> }
             <ItemList items={ products } />
        </div>
     );

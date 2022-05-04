@@ -3,10 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
+
 /* import logo from './logo.svg'; */
-
-/* greeting='¡Bienvenido a Mi Camiseta!' */
-
 /* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -28,7 +26,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={ <ItemListContainer /> } />
-        <Route path='/category/:categoryId' element={ <ItemListContainer /> }/>
+        <Route path='/category/:categoryId' element={ <ItemListContainer /> } />
         <Route path='/item/:id' element={ <ItemDetailContainer /> } />
       </Routes>
     </div>

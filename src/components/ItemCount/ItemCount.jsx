@@ -28,11 +28,11 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             <div className='item-count'>
                 <h4>Cantidad: </h4>
                 <input value={count} />
-                <button onClick={increaseButton}>+</button>
-                <button onClick={decreaseButton}>-</button>
+                <button onClick={ increaseButton }>+</button>
+                <button onClick={ decreaseButton }>-</button>
             </div>
             <div className='item-cart-button'>
-                <Link to="/cart"><button onClick={sendingCart}>Agregar al carrito</button></Link>
+                <Link to="/cart"><button onClick={ sendingCart }>Agregar al carrito</button></Link>
             </div>
         </div>
     );

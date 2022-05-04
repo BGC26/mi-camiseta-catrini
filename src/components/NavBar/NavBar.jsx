@@ -1,20 +1,23 @@
 import React from 'react';
 import './NavBar.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
+import LogoApp from '../../assets/mi-camiseta-logo.png'
 
-function NavBar(props) {
+function NavBar() {
     return (
         <div className='navbar'>
-            <h1 className='title-navbar'>Mi Camiseta</h1>
+            <div className='logo-content'>
+            <Link to="/"><img src={ LogoApp } className="logo-navbar" alt="imgLogo" /></Link>
+            </div>
             <ul className='categories-navbar'>
-                <li><Link to={'/'} className='section'>Inicio</Link></li>
-                <li><Link to={'/category/club'} className='section'>Club</Link></li>
-                <li><Link to={'/category/seleccion'} className='section'>Seleccion</Link></li>
+                <li><NavLink to={'/'} className={nav => nav.isActive ? 'section-active' : 'section-one'}>Inicio</NavLink></li>
+                <li><NavLink to={'/category/club'} className={nav => nav.isActive ? 'section-active' : 'section-one'}>Club</NavLink></li>
+                <li><NavLink to={'/category/seleccion'} className={nav => nav.isActive ? 'section-active' : 'section-one'}>Seleccion</NavLink></li>
             </ul>
             <ul className='login-register-navbar'>
-                <li><Link to={'/login'} className='section'>Login</Link></li>
-                <li><Link to={'/register'} className='section'>Register</Link></li>
+                <li><NavLink to={'/login'} className={nav => nav.isActive ? 'section-active' : 'section-two'}>Login</NavLink></li>
+                <li><NavLink to={'/register'} className={nav => nav.isActive ? 'section-active' : 'section-two'}>Register</NavLink></li>
             </ul>
             <CartWidget />
         </div>
