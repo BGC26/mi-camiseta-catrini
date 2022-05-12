@@ -58,7 +58,7 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(false);
     const [myItem, setItem] = useState({});
     const { id } = useParams();
-
+    
     useEffect(() => {
         setLoading(true)
         getItem(id)
