@@ -22,7 +22,7 @@ const ItemDetail = ({ item }) => {
                 <div className='item-detail-price'>{ item?.price }</div>
                 <div className='item-detail-stock'>Stock: { item?.stock }</div>
                 { quantityProducts ? 
-                <Link to='/cart'><button className='finishing-button'>Finalizar compra (Unidades: { quantityProducts })</button></Link> : 
+                <Link to='/cart'><button className='finishing-button'>Agregar al carrito (Unidades: { quantityProducts })</button></Link> : 
                 <ItemCount stock={ item?.stock } initial={1} onAdd={ addCart } /> 
                 }
             </div>

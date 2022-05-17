@@ -9,15 +9,22 @@
 }
 
 .logo-content{
-    width: 20%;
-    height: 18vh;
+    width: 25%;
+    height: 100%;
     margin-right: 20px;
 }
 
 .logo-navbar{
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin-left: 30px;
+}
+
+.categories-navbar-content{
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
 }
 
 .categories-navbar{
@@ -26,6 +33,12 @@
     justify-content: center;
     color: white;
     margin-top: 40px;
+}
+
+.login-register-navbar-content{
+    width: 15%;
+    height: 100%;
+    margin-right: 30px;
 }
 
 .login-register-navbar{
@@ -54,7 +67,7 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin-right: 40px;
+    margin-right: 15px;
 }
 
 .section-two:hover{
@@ -67,4 +80,10 @@
     color: rgb(251, 180, 1);
     font-weight: bold;
     margin-right: 40px;
+}
+
+.cartwidget-content{
+    width: 10%;
+    height: 100%;
+    margin-right: 20px;
 }

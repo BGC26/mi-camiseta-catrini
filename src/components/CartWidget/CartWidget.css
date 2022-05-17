@@ -10,3 +10,17 @@
     border-color:white;
     background-color: gray;
 }
+
+.products-cart{
+    text-decoration: none;
+    color: rgb(0, 0, 62);
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: white;
+    border-style:dotted;
+    border-radius: 50px;
+    width: 2vh;
+    height: 5%;
+    padding: 5px 10px 5px 10px;
+}
