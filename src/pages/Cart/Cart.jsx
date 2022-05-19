@@ -10,10 +10,14 @@ const Cart = () => {
 
     return (
         <div className='cart-container'>
+            <div className='cart-products'>
             { productList.map((item) => (<CartItem key={item.id} item={item} />))}
+            </div>
             { productList.length > 0 ? (
             <>
-            <h2 className='cart-total-products'>Total: {totalPrice()}</h2>
+            <div className='cart-total-products'>
+            <h2>Total: ${totalPrice()}</h2>
+            </div>
             </> ) : (
             <>
             <h1 className='cart-no-products-title'>No hay productos seleccionados</h1>

@@ -5,6 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'; 
 import { CartContextProvider } from './context/CartContext';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBLAqOtUEB-Er17O4pErtQEdso8TyaoC5k",
+  authDomain: "mi-camiseta-catrini.firebaseapp.com",
+  projectId: "mi-camiseta-catrini",
+  storageBucket: "mi-camiseta-catrini.appspot.com",
+  messagingSenderId: "672500934341",
+  appId: "1:672500934341:web:b443cf000419fcf3d132ac"
+};
+
+initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>

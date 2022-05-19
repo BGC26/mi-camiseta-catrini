@@ -19,7 +19,7 @@ const ItemDetail = ({ item }) => {
             <img className="item-detail-img" src={ item?.image } alt="imgProducto" />
             <div className='item-detail-information'>
                 <div className='item-detail-description'>{ item?.title }</div>
-                <div className='item-detail-price'>{ item?.price }</div>
+                <div className='item-detail-price'>${ item?.price }</div>
                 <div className='item-detail-stock'>Stock: { item?.stock }</div>
                 { quantityProducts ? 
                 <Link to='/cart'><button className='finishing-button'>Agregar al carrito (Unidades: { quantityProducts })</button></Link> : 

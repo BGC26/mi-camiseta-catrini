@@ -1,4 +1,4 @@
-.cart-widget{
+.navbar-cart-widget{
     color: rgb(0, 0, 62);
     font-weight: bold;
     width: 30px;
@@ -11,7 +11,7 @@
     background-color: gray;
 }
 
-.products-cart{
+.navbar-cart-products{
     text-decoration: none;
     color: rgb(0, 0, 62);
     margin-bottom: 40px;

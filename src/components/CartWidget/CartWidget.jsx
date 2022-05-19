@@ -10,8 +10,8 @@ const CartWidget = () => {
 
     return (
         <Link to="/cart">
-            <img src={ LogoCarrito } className="cart-widget" alt="" />
-            <span className='products-cart'>{totalItems()}</span>
+            <img src={ LogoCarrito } className="navbar-cart-widget" alt="" />
+            <span className='navbar-cart-products'>{totalItems()}</span>
         </Link>
     );
 }; 
