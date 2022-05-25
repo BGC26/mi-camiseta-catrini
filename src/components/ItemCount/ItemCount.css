@@ -33,6 +33,7 @@
 
 .item-count h4{
 margin-right: 5px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .item-count input{
@@ -56,6 +57,7 @@ margin-right: 5px;
     text-align:center;
     flex-grow: 1;
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 15px;
     width: 50vh;

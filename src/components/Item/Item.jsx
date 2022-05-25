@@ -11,7 +11,7 @@ const Item = ({ item }) => {
                 <div className='item-price'>${ item?.price }</div>
                 <div className='item-stock'>Stock: { item?.stock }</div>
             </div>
-            <Link to={ "/item/" + item?.id }><button class="item-button">Ver detalle</button></Link>
+            <Link to={ "/item/" + item?.id }><button class="item-button">Ver más</button></Link>
         </div>
     );
 };

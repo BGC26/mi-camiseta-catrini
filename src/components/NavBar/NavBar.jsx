@@ -21,12 +21,6 @@ function NavBar() {
                     <li><NavLink to={'/category/seleccion'} className={nav => nav.isActive ? 'section-active' : 'section-one'}>Seleccion</NavLink></li>
                 </ul>
             </div>
-            <div className='login-register-navbar-content'>
-                <ul className='login-register-navbar'>
-                    <li><NavLink to={'/login'} className={nav => nav.isActive ? 'section-active' : 'section-two'}>Login</NavLink></li>
-                    <li><NavLink to={'/register'} className={nav => nav.isActive ? 'section-active' : 'section-two'}>Register</NavLink></li>
-                </ul>
-            </div>
             <div className='cartwidget-content'>
                 { totalItems() > 0 && <CartWidget /> }
             </div>

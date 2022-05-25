@@ -1,9 +1,10 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import Cart from './pages/Cart/Cart';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
+import Cart from './pages/Cart/Cart';
+import Checkout from './pages/Checkout/Checkout';
 
 /* import logo from './logo.svg'; */
 /* <header className="App-header">
@@ -30,6 +31,7 @@ function App() {
         <Route path='/category/:categoryId' element={ <ItemListContainer /> } />
         <Route path='/item/:id' element={ <ItemDetailContainer /> } />
         <Route path='/cart' element={ <Cart /> } />
+        <Route path='/checkout' element={ <Checkout /> } />
       </Routes>
     </div>
   );

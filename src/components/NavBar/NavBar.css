@@ -9,7 +9,7 @@
 }
 
 .logo-content{
-    width: 25%;
+    width: 20%;
     height: 100%;
     margin-right: 20px;
 }
@@ -18,13 +18,12 @@
     display: flex;
     width: 80%;
     height: 100%;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .categories-navbar-content{
-    width: 50%;
+    width: 60%;
     height: 100%;
-    margin-right: 20px;
 }
 
 .categories-navbar{
@@ -34,6 +33,12 @@
     color: white;
     margin-top: 40px;
 }
+
+.categories-navbar li{
+    margin-left: 30px;
+}
+
+/*
 
 .login-register-navbar-content{
     width: 15%;
@@ -50,6 +55,8 @@
     margin-left: 40px;
 }
 
+*/
+
 .section-one{
     padding: 10px;
     text-decoration: none;
@@ -61,6 +68,8 @@
 .section-one:hover{
     color: rgb(251, 180, 1);
 }
+
+/*
 
 .section-two{
     padding: 10px;
@@ -74,6 +83,8 @@
     color: rgb(251, 180, 1);
 }
 
+*/
+
 .section-active{
     padding: 10px;
     text-decoration: none;
@@ -83,7 +94,8 @@
 }
 
 .cartwidget-content{
-    width: 10%;
+    width: 20%;
     height: 100%;
-    margin-right: 20px;
+    text-align: end;
+    margin-right: 30px;
 }
