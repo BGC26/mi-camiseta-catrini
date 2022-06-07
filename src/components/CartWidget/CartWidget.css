@@ -13,6 +13,7 @@
 
 .navbar-cart-products{
     text-decoration: none;
+    line-height: none;
     color: rgb(0, 0, 62);
     margin-bottom: 40px;
     font-weight: bold;

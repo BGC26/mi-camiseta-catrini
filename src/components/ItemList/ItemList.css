@@ -5,3 +5,23 @@
     margin-left: 40px;
     max-width: 100%;
 }
+
+.item-list-title{
+    width: 100%;
+}
+
+.item-list-title h1{
+    text-align:start;
+    color: white;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 375px;
+    padding: 7px;
+    margin-left: 25px;
+    margin-bottom: -5px;
+    background-color: black;
+    border: 0.5px solid grey;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 3%;
+    opacity: 0.7;
+}

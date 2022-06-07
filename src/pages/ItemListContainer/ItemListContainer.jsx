@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Loader from '../../components/Loader/Loader';
-import ItemList from '../../components/ItemList/ItemList';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
+import ItemList from '../../components/ItemList/ItemList';
+import Loader from '../../components/Loader/Loader';
 import './ItemListContainer.css';
 
 
@@ -37,7 +37,6 @@ const ItemListContainer = () => {
         .finally(() => {
             setLoading(false)
         })
-
     }, [categoryId]);
 
     return (

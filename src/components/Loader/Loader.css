@@ -10,8 +10,8 @@
 
 .spiner{
     margin-right: 10px;
-    border: 10px solid gray; /* Light grey */
-    border-top: 10px solid rgb(0, 0, 62); /* Blue */
+    border: 10px solid black; 
+    border-top: 10px solid rgb(251, 180, 1);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -24,7 +24,7 @@
   }
 
   .loading{
-      color: rgb(0, 0, 62);
+      color: black;
       font-weight: bold;
       font-style: italic;
   }

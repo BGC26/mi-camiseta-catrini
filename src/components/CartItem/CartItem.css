@@ -1,13 +1,13 @@
 .cart-item-container{
     display: inline-flex;
     position: relative;
-    color: rgb(0, 0, 62);
+    color: black;
     background-color: rgb(197, 197, 197);
     border: 0.5px solid grey;
     margin: 30px 30px 30px 30px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 62);
+    box-shadow: 0px 0px 10px black;
     width: 80%;
-    height: 5%;
+    height: 200px;
 }
 
 .cart-item-quantity{
@@ -17,22 +17,22 @@
     color: white;
     font-weight: bold;
     font-size: 15px;
-    background-color: rgb(0, 0, 62);
+    background-color: black;
     border-radius: 50px;
     width: 2vh;
-    height: 5%;
+    height: 3vh;
     padding: 5px 10px 5px 10px;
 }
 
 .cart-item-img{
-    border: rgb(0, 0, 62) solid 1px;
+    border: black solid 1px;
     margin: 15px;
     width: 15%;
     height: 25vh;
 }
 
 .cart-item-title{
-    color:rgb(0, 0, 62);
+    color:black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -43,7 +43,7 @@
 }
 
 .cart-item-price{
-    color:rgb(0, 0, 62);
+    color:black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     align-self: center;
@@ -65,7 +65,7 @@
     font-weight: bold;
     font-size: 15px;
     padding: 5px 5px 5px 5px;
-    background-color: rgb(0, 0, 62);
+    background-color: black;
     border-radius: 10px;
     width: 5%;
 }

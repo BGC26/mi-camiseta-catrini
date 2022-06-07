@@ -1,11 +1,11 @@
 import React from 'react';
-import './NavBar.css';
-import { Link, NavLink } from 'react-router-dom';
-import CartWidget from '../CartWidget/CartWidget';
-import LogoApp from '../../assets/mi-camiseta-logo.png';
 import { useCartContext } from '../../context/CartContext';
+import { Link, NavLink } from 'react-router-dom';
+import LogoApp from '../../assets/micamiseta.png';
+import CartWidget from '../CartWidget/CartWidget';
+import './NavBar.css';
 
-function NavBar() {
+const NavBar = () => {
 
     const { totalItems } = useCartContext();
 

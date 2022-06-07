@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Loader from '../../components/Loader/Loader';
-import ItemDetail from '../../components/ItemDetail/ItemDetail';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
+import ItemDetail from '../../components/ItemDetail/ItemDetail';
+import Loader from '../../components/Loader/Loader';
 import './ItemDetailContainer.css';
 
 

@@ -1,10 +1,10 @@
 .navbar{
-    padding: 1%;
-    order: 0;
     width: 100%;
     height: 18vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: space-evenly;
-    background-color: rgb(0, 0, 62);
+    background-color: black;
     display: flex;
 }
 
@@ -16,7 +16,7 @@
 
 .logo-navbar{
     display: flex;
-    width: 80%;
+    width: 70%;
     height: 100%;
     margin-left: 10px;
 }
@@ -38,25 +38,6 @@
     margin-left: 30px;
 }
 
-/*
-
-.login-register-navbar-content{
-    width: 15%;
-    height: 100%;
-    margin-right: 30px;
-}
-
-.login-register-navbar{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin-top: 40px;
-    margin-left: 40px;
-}
-
-*/
-
 .section-one{
     padding: 10px;
     text-decoration: none;
@@ -68,22 +49,6 @@
 .section-one:hover{
     color: rgb(251, 180, 1);
 }
-
-/*
-
-.section-two{
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-right: 15px;
-}
-
-.section-two:hover{
-    color: rgb(251, 180, 1);
-}
-
-*/
 
 .section-active{
     padding: 10px;

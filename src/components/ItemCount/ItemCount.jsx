@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './ItemCount.css';
 
 const ItemCount = ({ stock, initial, onAdd }) => {
+    
     const [count, setCount] = useState(initial);
     
     function increaseButton() {

@@ -1,28 +1,3 @@
-/*
-.item-count-container{
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 40px;
-    background-color: rgb(197, 197, 197);
-    margin: 40px auto;
-    height: 20px;
-    width: 20px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 62);
-    border-radius: 3%;
-    min-width: 250px;
-    min-height: 150px;
-}
-
-.item-count-container div{
-    position: relative;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-*/
-
 .item-count{
     display: inline-flex;
     align-items: center;
@@ -32,21 +7,21 @@
 }
 
 .item-count h4{
-margin-right: 5px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .item-count input{
     text-align: center;
     margin-right: 5px;
     font-weight: bold;
-    border-color: rgb(0, 0, 62);
+    border-color: black;
 }
 
 .item-count button{
     margin-right: 3px;
     color:white;
-    background-color: rgb(0, 0, 62);
+    background-color: black;
 }
 
 .item-cart-button{
@@ -62,7 +37,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     font-size: 15px;
     width: 50vh;
     padding: 5px 35px 5px 35px;
-    background-color: rgb(0, 0, 62);
+    background-color: black;
     border-radius: 10px;
 }
 

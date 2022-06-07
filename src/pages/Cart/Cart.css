@@ -4,7 +4,13 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/mi-camiseta-catrini.appspot.com/o/mi-camiseta-estadio.jpeg?alt=media&token=fc8492ee-0853-476d-86c3-f46f2ed763e4);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .cart-products{
@@ -13,7 +19,7 @@
 }
 
 .cart-total-products{
-    color: rgb(0, 0, 62);
+    color: black;
     align-self: center;
     text-align: center;
     font-weight: bold;
@@ -22,7 +28,7 @@
     padding: 3px;
     background-color: rgb(197, 197, 197);
     border-style: dashed;
-    border-color: rgb(0, 0, 62);
+    border-color: black;
     width: 10%;
 }
 
@@ -31,6 +37,7 @@
     text-align: center;
     width: 10%;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .cart-checkout-button button{
@@ -40,7 +47,7 @@
     margin-left: 20px;
     font-size: 15px;
     padding: 3px;
-    background-color: rgb(0, 0, 62);
+    background-color: black;
 }
 
 .cart-checkout-button button:hover{
@@ -48,7 +55,7 @@
 }
 
 .cart-no-products-title{
-    color:rgb(0, 0, 62);
+    color:black;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     align-self: center;
