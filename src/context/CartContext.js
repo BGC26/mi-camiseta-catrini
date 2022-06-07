@@ -11,12 +11,12 @@ export const CartContextProvider = ({ children }) => {
     const isInCart = (id) => {
         return productList.some(item => item.id === id)
     }
-
+    
     const addItem = (item, quantity) => {
         if(isInCart(item.id)) {
-            setProductList(productList.map((product) => product.id === item.id ? {...product, quantity: product.quantity + quantity} : product))
+            setProductList(productList.map((product) => product.id === item.id ? {...product, quantity: product.quantity + quantity} : product));
         }
-        setProductList([...productList, {...item, quantity}])
+        setProductList([...productList, {...item, quantity}]);
     }
 
     const removeItem = (id) => {

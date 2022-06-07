@@ -10,11 +10,8 @@ const ItemListContainer = () => {
     
     function getProducts(category) {
         const db = getFirestore();
-
         const itemCollection = collection(db, 'items');
-
         const q = category && query(itemCollection, where('category', '==', category));
-
         return getDocs(q || itemCollection);
     }
 

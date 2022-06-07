@@ -10,9 +10,7 @@ const ItemDetailContainer = () => {
 
     function getItem(id) {
         const db = getFirestore();
-
         const itemReference = doc(db, 'items', id);
-
         return getDoc(itemReference);
     }
 

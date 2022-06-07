@@ -5,19 +5,19 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     
     const [count, setCount] = useState(initial);
     
-    function increaseButton() {
+    const increaseButton = () => {
         if (count < stock) {
             setCount(count + 1)
         }
     }
 
-    function decreaseButton() {
+    const decreaseButton = () => {
         if (count > 1) {
             setCount(count - 1)
         }
     }
 
-    function sendingCart() {
+    const sendingCart = () => {
         if (count <= stock){
             onAdd(count)
         }
