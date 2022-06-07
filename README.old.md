@@ -4,9 +4,8 @@ Es una aplicación para comercializar productos deportivos, específicamente cam
 
 
 ## Instalación
----
 
-Para obtener un entorno de desarrollo ejecutándose, deberás: 
+Para obtener un entorno de desarrollo ejecutándose, se debe: 
 
 1. Clonar el repositiorio proporcionando la dirección URL del mismo.
 2. Instalar los modulos externos ejecutando el comando npm install en la consola. 
@@ -14,15 +13,14 @@ Para obtener un entorno de desarrollo ejecutándose, deberás:
 
 
 ## Componentes
----
 
 Estos son los principales componentes que permiten una gran comprensión y mantenimiento de la presente aplicación:
 
-* **ItemListContainer**. Componente contenedor que, al llamar a la colección de datos ubicada en la plataforma Firebase, mediante el uso de hooks renderiza todos los productos, o bien según su categoría a través de la implementación de queries. 
+* **ItemListContainer**. Componente contenedor que, al llamar a la colección de datos ubicada en la plataforma Firebase, renderiza todos los productos, o bien, según su categoría a través de la implementación de queries. 
 
 ![](docs/screenshot-home.png)
 
-* **ItemDetailContainer**. Componente contenedor que, al llamar a la colección de datos con el id como parámetro, mediante el uso de hooks renderiza el detalle de un producto en particular. 
+* **ItemDetailContainer**. Componente contenedor que, al llamar a la colección de datos con el id como parámetro, renderiza el detalle de un producto en particular. 
 
 ![](docs/screenshot-detail.png)
 
@@ -40,7 +38,6 @@ Estos son los principales componentes que permiten una gran comprensión y mante
 
 
 ## Funcionalidades 
---
 
 Estos son los principales métodos establecidos que permiten una mayor optimización del funcionamiento de la aplicación: 
 
@@ -136,13 +133,11 @@ const handlerSubmit = (element) => {
 ```
 
 ## Herramientas 
----
 
 * ReactJS
 * Firebase
 
 
 ## Autor
----
 
 * Brian Gabriel Catrini
